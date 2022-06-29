@@ -1,0 +1,52 @@
+Operating System: UBUNTU_20_64
+Password: eDLhTz44xQHA
+Private IP: 10.190.171.206
+Public IP: 52.117.94.180
+Username: root
+Hostname: itzvsi-v0m8tbrr
+Desktop password:  eDLhTz44xQHA
+Environment ID:  131660512
+
+
+1. Create new VM
+
+2. Install and Run Docker
+https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04
+
+3. mkdir /mnt/data /mnt/metrics /mnt/traces  /var/log/instana
+
+4. 
+
+echo "deb [arch=amd64] https://self-hosted.instana.io/apt generic main" > /etc/apt/sources.list.d/instana-product.list
+wget -qO - "https://self-hosted.instana.io/signing_key.gpg" | apt-key add -
+apt-get update
+apt-get install instana-console
+
+
+cat >/etc/apt/preferences.d/instana-console <<EOF
+Package: instana-console
+Pin: version <version to pin>
+Pin-Priority: 1000
+EOF
+
+
+
+
+5. 
+
+instana init
+
+agent key qUMhYJxjSv6uZh2SyqTEnw
+sales key pgABSBp_SnqIr5oMD68HoQ
+
+
+
+6.
+
+instana license download
+instana license download -k pgABSBp_SnqIr5oMD68HoQ
+instana license import -f /root/license
+instana license verify
+
+Valid from: 2021-02-22 00:00:00 +0000 UTC
+Valid till: 2121-12-01 23:59:59.999 +0000 UTC
