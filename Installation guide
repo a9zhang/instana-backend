@@ -10,6 +10,8 @@ Environment ID:  131660512
 
 1. Create new VM
 
+ssh root@67.228.227.210
+
 2. Install and Run Docker
 https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04
 
