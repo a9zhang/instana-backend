@@ -7,7 +7,7 @@ https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-o
 
 3. mkdir /mnt/data /mnt/metrics /mnt/traces  /var/log/instana
 
-4. 
+4. Install Instana Backend
 
 echo "deb [arch=amd64] https://self-hosted.instana.io/apt generic main" > /etc/apt/sources.list.d/instana-product.list
 wget -qO - "https://self-hosted.instana.io/signing_key.gpg" | apt-key add -
@@ -20,9 +20,6 @@ Package: instana-console
 Pin: version <version to pin>
 Pin-Priority: 1000
 EOF
-
-
-
 
 5. 
 
