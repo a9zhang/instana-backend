@@ -7,6 +7,10 @@ https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-o
 
 3. mkdir /mnt/data /mnt/metrics /mnt/traces  /var/log/instana
 
+Open port 80,443,86,1444
+https://askubuntu.com/questions/1259860/on-ubuntu-20-04-how-do-you-open-a-port-in-the-firewall
+
+
 4. Install Instana Backend
 
 echo "deb [arch=amd64] https://self-hosted.instana.io/apt generic main" > /etc/apt/sources.list.d/instana-product.list
